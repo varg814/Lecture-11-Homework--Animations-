@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  height: 100vh;
+  position: relative;
+  background-image: url(./images/background.png);
+  background-size: 100% 100%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.mario {
+  width: 119px;
+  height: 127px;
+  position: absolute;
+  top: 480px;
+  left: 0px;
+  animation-name: mario;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes mario {
+  0% {
+    top: 480px;
+    left: 0px;
+  }
+
+  100% {
+    top: 480px;
+    left: 1000px;
+  }
+}
+
+.luigi {
+  width: 122px;
+  height: 131px;
+  position: absolute;
+  top: 590px;
+  left: 1300px;
+  animation-name: luigi;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes luigi {
+  0%,
+  100% {
+    top: 590px;
+    left: 1300px;
+  }
+
+  25%,
+  75% {
+    top: 560px;
+    left: 1200px;
+  }
+
+  50% {
+    top: 595px;
+    left: 1100px;
+  }
+}
+
+.tree {
+  width: 119px;
+  height: 140px;
+  position: absolute;
+  top: 250px;
+  left: 500px;
+  animation-name: tree;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes tree {
+  0% {
+    top: 250px;
+    left: calc(100% - 119px);
+  }
+
+  100% {
+    top: 250px;
+    left: 0;
+  }
+}
+
+.sun {
+  width: 272px;
+  height: 263px;
+  position: absolute;
+  top: 0px;
+  left: 848px;
+  animation-name: sun;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes sun {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cloud {
+  height: 120px;
+  width: 200px;
+  position: absolute;
+  left: 1200px;
+  top: 50px;
+  animation-name: cloud;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cloud {
+  0% {
+    left: 1200px;
+    top: 50px;
+  }
+
+  25% {
+    left: 1000px;
+    top: 70px;
+  }
+
+  50% {
+    left: 800px;
+    top: 30px;
+  }
+
+  75% {
+    left: 500px;
+    top: 70px;
+  }
+
+  100% {
+    left: 200px;
+    top: 70px;
+  }
+}
